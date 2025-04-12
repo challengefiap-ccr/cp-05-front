@@ -1,7 +1,17 @@
+import CatalogoProdutos from "@/components/CatalogoProdutos";
+
 export default function Home() {
+
+
+  
+
+
   return (
-    <main>
-      <div>Hello world!</div>
+    <main className="grid justify-center w-full bg-amber-400">
+      
+
+        <CatalogoProdutos/>
+     
     </main>
   );
 }
