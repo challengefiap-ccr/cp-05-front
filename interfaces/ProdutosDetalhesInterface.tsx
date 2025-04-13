@@ -1,10 +1,9 @@
-import { ProdutosProp } from "./ProdutosInterface";
+import { ProdutosProp } from './ProdutosInterface'
 
-export interface ProdutoDetalhe extends ProdutosProp{
-
+// tipagem para o produto em página detalhes
+export interface ProdutoDetalhe extends ProdutosProp {
     category: string
-    brand:string
-    description:string
-    length:number
-
+    brand: string
+    description: string
+    rating: number
 }

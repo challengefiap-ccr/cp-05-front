@@ -1,21 +1,14 @@
+import ListaDetalheProduto from '@/components/ListaDetalheProduto'
 
+//página com detalhes de um produto específico
+const page = async ({ params }: { params: Promise<{ id: string }> }) => {
+    const { id } = await params
 
-import ListaDetalheProduto from "@/components/ListaDetalheProduto"
-import { log } from "console"
-
-
-const  page = async({params}:{params:any}) => {
-        const id = await params.id
-   
-
-
-
-  return (
-    <main>
-      <ListaDetalheProduto id={id}/>
-
-    </main>
-  )
+    return (
+        <main className="flex justify-center items-center min-h-screen">
+            <ListaDetalheProduto id={id} />
+        </main>
+    )
 }
 
 export default page
